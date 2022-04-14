@@ -122,3 +122,17 @@ You need `--allow-net` and `--allow-write` permission to use `download` function
 ## License
 
 [MIT](./LICENSE)
+
+---
+
+# Extra Information for Developers / Supporters of this package 
+
+## Running the test files 
+
+```
+# Running one specific testfile
+deno --unstable test --allow-write --allow-net --allow-read  download_test.ts
+
+# Running all testfiles
+deno --unstable test --allow-write --allow-net --allow-read  
+```
