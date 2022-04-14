@@ -30,6 +30,7 @@ export async function download(
   size = blob.size;
   const buffer = await blob.arrayBuffer();
   const unit8arr = new Deno.Buffer(buffer).bytes();
+
   if (
     typeof destination === "undefined" || typeof destination.dir === "undefined"
   ) {
@@ -37,6 +38,7 @@ export async function download(
   } else {
     dir = destination.dir;
   }
+
   if (
     typeof destination === "undefined" ||
     typeof destination.file === "undefined"
@@ -45,6 +47,7 @@ export async function download(
   } else {
     file = destination.file;
   }
+
   if (
     typeof destination != "undefined" && typeof destination.mode != "undefined"
   ) {
